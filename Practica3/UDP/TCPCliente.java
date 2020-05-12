@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket; //simula un pocket para enviar y recibir paquetes
 import java.net.InetAddress;
-public class UDPCliente {
+public class TCPCliente {
 
 	public static void main(String args[]) throws Exception {
 		   long latencia = 0;
