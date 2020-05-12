@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
-public class TCPClient {
+public class UDPClient {
 	private static long[] latencia;	// almacena la latencia	
 	public static void main(String[] args) {
 		latencia = new long[200];
