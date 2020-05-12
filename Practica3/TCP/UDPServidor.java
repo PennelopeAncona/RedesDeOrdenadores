@@ -1,7 +1,7 @@
 
 import java.io.IOException;
 import java.net.*;
-public class TCPServer {
+public class UDPServer {
 	/**
 	 * El Servidor se mantiene escchando indefinidamente 
 	 * por eso lo meemos en un loop
