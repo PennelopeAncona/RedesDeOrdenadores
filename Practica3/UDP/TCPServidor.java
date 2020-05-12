@@ -2,8 +2,7 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
 
-/*Protocolo no orientado a la conexion, carece de una petición de conexion y se da por hecho
- * que su red está basada en datagramas*/
+/*Protocolo  orientado a la conexion, necesita de una petición de conexion.*/
 class TCPServeridor {
    public static void main(String args[]) throws Exception {
        String confirmacion = "Received"; //mensaje de confirmacion 
@@ -15,9 +14,7 @@ class TCPServeridor {
     	   //indican el tamaño del buffer que sale y llega
     	   byte[] receiveData = new byte[1024]; 
            byte[] sendData = new byte[1024]; 
-           
-           //DatagramPacket implementa un servicio de entrega de paquetes sin conexión.
-           //por lo tanto la conexión se basa grcias a la información que contiene el paquete
+          
            
            //Construimos un datagramaPacket para recibir paquetes de longitud length
     	   DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length); 
