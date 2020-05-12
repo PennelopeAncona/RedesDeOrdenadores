@@ -4,7 +4,7 @@ import java.net.InetAddress;
 
 /*Protocolo no orientado a la conexion, carece de una petición de conexion y se da por hecho
  * que su red está basada en datagramas*/
-class UDPServeridor {
+class TCPServeridor {
    public static void main(String args[]) throws Exception {
        String confirmacion = "Received"; //mensaje de confirmacion 
        
